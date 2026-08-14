@@ -1,0 +1,1147 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #fff9fb;
+
+    color: #3d2028;
+
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+
+    width: 100%;
+
+    min-height: 85px;
+
+    background: #ff4f87;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 7%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .15);
+}
+
+
+
+/* LOGO */
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    font-family: cursive;
+}
+
+
+.logo-area img {
+
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+
+/* ========================================
+   MENÚ
+======================================== */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+}
+
+
+.menu a {
+
+    color: white;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    padding: 7px 5px;
+}
+
+
+.menu a:hover {
+
+    color: #ffe1eb;
+
+    transform: translateY(-2px);
+}
+
+
+.menu a.activo {
+
+    border-bottom: 3px solid white;
+
+}
+
+
+
+/* ========================================
+   INICIO
+======================================== */
+
+.hero {
+
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+
+        linear-gradient(rgba(255, 190, 210, .90),
+            rgba(255, 241, 245, .96));
+}
+
+
+.hero-contenido {
+
+    max-width: 850px;
+}
+
+
+.etiqueta {
+
+    color: #e83270;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+
+    font-family: cursive;
+
+    font-size: 80px;
+
+    color: #68172c;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h2 {
+
+    color: #df316c;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p:not(.etiqueta) {
+
+    font-size: 19px;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.botones {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    background: #ed3975;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+
+.btn:hover {
+
+    background: #b81d50;
+
+    transform: scale(1.05);
+}
+
+
+.btn-secundario {
+
+    background: #6b172d;
+}
+
+
+.btn-secundario:hover {
+
+    background: #45101d;
+}
+
+
+.btn.pequeño {
+
+    padding: 10px 20px;
+
+    margin-top: 15px;
+}
+
+
+
+/* ========================================
+   BIENVENIDA
+======================================== */
+
+.bienvenida {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+.bienvenida h2 {
+
+    font-size: 40px;
+
+    color: #68172c;
+
+    margin-bottom: 20px;
+}
+
+
+.bienvenida p {
+
+    margin-bottom: 25px;
+
+    font-size: 18px;
+}
+
+
+.bienvenida-iconos {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.bienvenida-iconos div {
+
+    background: #ffe4ec;
+
+    border-radius: 20px;
+
+    padding: 30px 10px;
+
+    text-align: center;
+
+    font-size: 50px;
+}
+
+
+.bienvenida-iconos span {
+
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #68172c;
+}
+
+
+
+/* ========================================
+   TÍTULO DE PÁGINAS
+======================================== */
+
+.pagina-titulo {
+
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background: #ffe4ec;
+}
+
+
+.pagina-titulo h1 {
+
+    font-family: cursive;
+
+    font-size: 55px;
+
+    color: #68172c;
+
+    margin-bottom: 10px;
+}
+
+
+.pagina-titulo p:last-child {
+
+    font-size: 18px;
+}
+
+
+
+/* ========================================
+   SECCIONES
+======================================== */
+
+.seccion {
+
+    padding: 80px 7%;
+
+    text-align: center;
+}
+
+
+.gris {
+
+    background: #fff0f4;
+}
+
+
+
+/* ========================================
+   NOSOTROS
+======================================== */
+
+.contenido {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+.texto-grande {
+
+    text-align: left;
+}
+
+
+.texto-grande h2 {
+
+    color: #68172c;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+
+.texto-grande p {
+
+    margin-bottom: 20px;
+
+    font-size: 17px;
+}
+
+
+.tarjeta-info {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+    text-align: center;
+}
+
+
+.tarjeta-info h2 {
+
+    color: #ed3975;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* ========================================
+   TARJETAS
+======================================== */
+
+.tarjetas {
+
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.tarjeta {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+}
+
+
+.tarjeta:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.tarjeta h3 {
+
+    color: #ed3975;
+
+    margin: 10px 0;
+}
+
+
+.emoji {
+
+    font-size: 50px;
+}
+
+
+
+/* ========================================
+   PRODUCTOS
+======================================== */
+
+.productos {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.producto {
+
+    background: white;
+
+    padding: 40px 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+}
+
+
+.producto:hover {
+
+    transform: translateY(-10px);
+}
+
+
+.producto-icono {
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+}
+
+
+.producto h2 {
+
+    color: #68172c;
+
+    margin-bottom: 10px;
+}
+
+
+
+/* ========================================
+   GALERÍA
+======================================== */
+
+.galeria {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.foto {
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .10);
+
+    transition: .3s;
+}
+
+
+.foto:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.foto img {
+
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.foto-info {
+
+    padding: 20px;
+}
+
+
+.foto-info h2 {
+
+    color: #68172c;
+
+    margin-bottom: 5px;
+}
+
+
+
+/* ========================================
+   UBICACIÓN
+======================================== */
+
+.ubicacion-contenido {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: .8fr 1.5fr;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+
+.ubicacion-info {
+
+    text-align: left;
+}
+
+
+.ubicacion-info h2 {
+
+    color: #68172c;
+
+    margin-bottom: 20px;
+
+    font-size: 30px;
+}
+
+
+.ubicacion-info p {
+
+    margin-bottom: 15px;
+}
+
+
+.datos {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #ffe4ec;
+
+    border-radius: 15px;
+}
+
+
+.mapa {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+}
+
+
+.mapa iframe {
+
+    display: block;
+
+    width: 100%;
+}
+
+
+
+/* ========================================
+   FORMULARIO
+======================================== */
+
+.formulario {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .10);
+}
+
+
+.formulario iframe {
+
+    width: 100%;
+
+    min-height: 700px;
+
+    border: none;
+}
+
+
+
+/* ========================================
+   CONTACTO
+======================================== */
+
+.contacto {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background: #68172c;
+}
+
+
+.contacto h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+.contacto p {
+
+    margin-bottom: 25px;
+}
+
+
+.btn-whatsapp {
+
+    display: inline-block;
+
+    background: #25D366;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+
+.btn-whatsapp:hover {
+
+    background: #159447;
+
+    transform: scale(1.05);
+}
+
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    background: #35151e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+
+.footer-logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-logo img {
+
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: contain;
+}
+
+
+.footer-logo h2 {
+
+    color: #ff9fbb;
+
+    font-family: cursive;
+}
+
+
+
+/* ========================================
+   WHATSAPP FLOTANTE
+======================================== */
+
+.whatsapp {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 65px;
+
+    height: 65px;
+
+    background: #25D366;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 30px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+
+    z-index: 2000;
+
+    transition: .3s;
+}
+
+
+.whatsapp:hover {
+
+    transform: scale(1.12);
+}
+
+
+
+/* ========================================
+   RESPONSIVO - TABLET
+======================================== */
+
+@media screen and (max-width: 900px) {
+
+    .header {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+
+    .menu {
+
+        gap: 12px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 65px;
+    }
+
+
+    .bienvenida {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .productos {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .tarjetas {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .ubicacion-contenido {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* ========================================
+   RESPONSIVO - CELULAR
+======================================== */
+
+@media screen and (max-width: 600px) {
+
+    .header {
+
+        position: relative;
+
+        padding: 15px 10px;
+    }
+
+
+    .logo-area {
+
+        font-size: 22px;
+    }
+
+
+    .logo-area img {
+
+        width: 55px;
+
+        height: 55px;
+    }
+
+
+    .menu {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 3px;
+    }
+
+
+    .menu a {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 6px;
+    }
+
+
+    .hero {
+
+        min-height: 520px;
+
+        padding: 40px 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 50px;
+    }
+
+
+    .hero h2 {
+
+        font-size: 23px;
+    }
+
+
+    .hero p:not(.etiqueta) {
+
+        font-size: 16px;
+    }
+
+
+    .pagina-titulo {
+
+        padding: 60px 20px;
+    }
+
+
+    .pagina-titulo h1 {
+
+        font-size: 42px;
+    }
+
+
+    .seccion {
+
+        padding: 55px 5%;
+    }
+
+
+    .bienvenida {
+
+        padding: 55px 20px;
+    }
+
+
+    .bienvenida h2 {
+
+        font-size: 30px;
+    }
+
+
+    .bienvenida-iconos {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .contenido {
+
+        grid-template-columns: 1fr;
+
+        padding: 55px 20px;
+    }
+
+
+    .tarjetas {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .productos {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .galeria {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .foto img {
+
+        height: 280px;
+    }
+
+
+    .ubicacion-contenido {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .mapa iframe {
+
+        height: 300px;
+    }
+
+
+    .formulario iframe {
+
+        min-height: 650px;
+    }
+
+
+    .contacto h2 {
+
+        font-size: 28px;
+    }
+
+
+    .whatsapp {
+
+        width: 55px;
+
+        height: 55px;
+
+        right: 15px;
+
+        bottom: 15px;
+
+        font-size: 25px;
+    }
+
+}
